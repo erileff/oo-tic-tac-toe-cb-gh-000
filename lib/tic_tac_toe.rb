@@ -35,7 +35,7 @@ class TicTacToe
   end
 
   def valid_move?(index)
-    if position_taken(index) || index > 8 || index < 0
+    if position_taken?(index) || index > 8 || index < 0
       false
     else
       true
@@ -44,6 +44,7 @@ class TicTacToe
   def turn_count
     @board.count{|square| square != " "}
   end
+
 end
 
 end
