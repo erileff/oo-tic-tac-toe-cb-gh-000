@@ -15,7 +15,7 @@ class TicTacToe
   ]
 
   def display_board
-    print @board
+    print board
   end
 
 end
