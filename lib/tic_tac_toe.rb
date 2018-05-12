@@ -80,7 +80,14 @@ class TicTacToe
   end
 
   def winner
+    if combo == won?
+      @board[combo[0]]
+    end
   end
 
+def play
+  turn until over?
+  puts winner ? "Congratulations @{winner}!" : "Cat's Game!"
+end
 
 end
