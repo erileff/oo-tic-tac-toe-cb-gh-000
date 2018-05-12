@@ -41,6 +41,10 @@ class TicTacToe
       true
   end
 
+  def turn
+    
+  end
+
   def turn_count
     @board.count{|square| square != " "}
   end
